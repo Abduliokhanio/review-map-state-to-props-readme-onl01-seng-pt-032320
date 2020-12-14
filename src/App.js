@@ -33,5 +33,7 @@ class App extends Component {
   }
 
   const mapStateToProps = (state) => {
-    return { orangePeel: ['a', 'b', 'c'] };
-  };
+    return { items: state.items }
+  }
+   
+  export default connect(mapStateToProps)(App);
